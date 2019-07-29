@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+    </head>
+    <body>
+    <header>
+    <div class="header">
+      <p><img src="{{ url_for('static', filename='images/WL-Logo.png') }}" alt="Westlakes"></p>
+    </div>
+    <div class="navbar">
+      <a href="http://127.0.0.1:5000/">Calculator</a>
+      <a href="http://127.0.0.1:5000/conversion/">Conversion Tables</a>
+      <a href="http://127.0.0.1:5000/chart/">Plots</a>
+      <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Locations</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="http://127.0.0.1:8050/">Preston</a>
+    <a href="#">Manchester</a>
+    <a href="#">Whitehaven</a>
+  </div>
+</div>
+      </div>
+    </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </div>
+  </body>
+</html>
